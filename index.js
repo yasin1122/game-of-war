@@ -57,7 +57,7 @@ function determineCardWinner(card1, card2) {
     
     if (card1ValueIndex > card2ValueIndex) {
         computerScore++
-        computerScoreEl.textContent = `Computer score: ${computerScore}`
+        computerScoreEl.textContent = `Computer: ${computerScore}`
         return "Computer wins!"
     } else if (card1ValueIndex < card2ValueIndex) {
         myScore++

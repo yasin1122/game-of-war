@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 
@@ -36,11 +36,25 @@ button#new-deck {
     align-self: flex-start;
     padding: 5px;
     border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 button.draw {
     padding: 5px;
     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.score-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
 }
 
 div.card-slot {
@@ -78,5 +92,5 @@ button:disabled {
 }
 
 h2 {
-    margin: 10px;
+    margin: 0;
 }
