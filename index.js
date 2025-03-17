@@ -9,12 +9,6 @@ const remainingText = document.getElementById("remaining")
 const computerScoreEl = document.getElementById("computer-score")
 const myScoreEl = document.getElementById("my-score")
 
-/**
- * Challenge:
- * 
- * Change async operations below to use async/await instead of .then()
- */
-
 async function handleClick() {
     const res = await fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     const data = await res.json()
@@ -73,12 +67,3 @@ function determineCardWinner(card1, card2) {
         return "War!"
     }
 }
-
-
-// async function handleClick() {
-//     const response = await fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
-//     const data = await res.json()
-//     remainingText.textContent = `Remaining cards: ${data.remaining}`
-//     deckId = data.deck_id
-//     console.log(deckId)
-// }

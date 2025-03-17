@@ -1,4 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
+    
     margin: 0;
     padding: 0;
     background-image: url("img/table.png");
@@ -14,21 +19,28 @@ body {
     color: white;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
 button {
     background-color: #FFF100;
     cursor: pointer;
     border: none;
+    font-size: 2rem;  
 }
 
 button#new-deck {
     align-self: flex-start;
     padding: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 button.draw {
-    font-size: 1.2em;
     padding: 5px;
-    align-self: stretch;
+    border-bottom-left-radius: 5px;
 }
 
 div.card-slot {
@@ -51,8 +63,9 @@ img.card {
 
 div.top {
     display: flex;
-    align-items: flex-start;
-    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 div.top > p {
